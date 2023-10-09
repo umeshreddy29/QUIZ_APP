@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/total_questions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="total questions :  "
+        android:textStyle="normal|bold"
+        android:textSize="30sp"
+        android:layout_margin="25dp"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/question_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="question will display here ?"
+        android:layout_above="@+id/options"
+        android:layout_marginVertical="20dp"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold|italic|normal"
+        />
+
+    <LinearLayout
+        android:id="@+id/options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:id="@+id/b_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="2dp"
+            android:text="A"
+            />
+        <Button
+            android:id="@+id/b_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="2dp"
+            android:text="B"
+            />
+        <Button
+            android:id="@+id/b_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="2dp"
+            android:text="C"
+            />
+        <Button
+            android:id="@+id/b_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="2dp"
+            android:text="D"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/options"
+        android:text="SUBMIT"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_margin="20sp"
+        android:layout_marginHorizontal="20sp"
+        />
+
+
+</RelativeLayout>
